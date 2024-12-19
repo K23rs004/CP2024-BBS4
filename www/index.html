@@ -182,13 +182,23 @@ function createPostElement(post) {
     const actions = canEdit ? `
         <div class="post-actions">
             <button class="btn-edit" onclick="startEdit('${post.id}')">
-                編集0
+                編集
             </button>
             <button class="btn-delete" onclick="deletePost('${post.id}')">
                 削除
             </button>
+             <button class="btn-good" onclick="incPost('${post.id}')">
+                good
+            </button>
+
+             </button>
+             <button class="btn-bad" onclick="decPost('${post.id}')">
+                bad
+            </button>
         </div>
     ` : '';
+
+
 
     return `
         <div class="post" id="post-${post.id}">
@@ -389,6 +399,22 @@ function deletePost(postId) {
     currentEditId = postId;
     showModal('deleteModal');
 }
+
+
+
+
+
+//押された回数をカウント
+function incPost(postId){
+
+}
+
+function decPost(postId){
+
+}
+
+
+
 
 // 更新時のアニメーション
 function animateUpdate(postId) {
