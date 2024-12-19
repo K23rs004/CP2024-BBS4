@@ -145,6 +145,8 @@ textarea.form-control {
     color: white;
 }
 
+
+
 .btn-danger:hover {
     background-color: #c82333;
 }
@@ -200,12 +202,25 @@ textarea.form-control {
 }
 
 .btn-edit, .btn-delete {
-    padding: 4px 8px;
+    padding: 4px 6px;
     font-size: 12px;
     min-width: 60px;
     border: none;
     border-radius: 4px;
 }
+
+
+
+//btngood,badを追加
+.btn-good,.btn-bad{
+ padding: 4px 4px;
+    font-size: 12px;
+    min-width: 70px;
+    border: none;
+    border-radius: 4px;
+}
+
+
 
 .post-author {
     font-weight: 600;
@@ -267,6 +282,7 @@ textarea.form-control {
 .btn-delete:hover {
     background-color: #c82333;
 }
+
 
 .post-content {
     color: #333;
