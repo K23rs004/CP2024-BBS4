@@ -220,7 +220,6 @@ function createPostElement(post) {
                     <span class="post-updated">
                         (編集済み: ${formatTimestamp(post.updatedAt)})
                     </span>
-
                 ` : ''}
 
                 <div class="post-votes">
@@ -571,6 +570,18 @@ $(function() {
 
     // 投稿一覧の初期読み込み
     loadPosts();
+    $('#btnRed').on('click',function(){
+        $("body").css("background-color","#e21b1b");
+    });
+
+    $('#btnBlue').on('click',function(){
+        $("body").css("background-color","#60b0ff");
+    });
+
+    $('#btnGreen').on('click',function(){
+        $("body").css("background-color","#93b633bd");
+    });
+
 });
 
 // クリーンアップ処理
@@ -585,8 +596,9 @@ window.addEventListener('unload', function() {
 <body>
     <div class="container">
         <h1>掲示板アプリ</h1>
-        <button id="btnGood">red</button>
-        <button id="btnBad">blue</button>
+        <button id="btnRed">red</button>
+        <button id="btnBlue">blue</button>
+        <button id="btnGreen">green</button>
 
         <!-- メッセージ表示エリア -->
         <div id="messageArea"></div>
@@ -687,5 +699,7 @@ window.addEventListener('unload', function() {
             </div>
         </div>
     </div>
+
+
 </body>
 </html>
