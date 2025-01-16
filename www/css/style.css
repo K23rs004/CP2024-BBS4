@@ -209,6 +209,21 @@ textarea.form-control {
     border-radius: 4px;
 }
 
+.btn-good {
+    padding: 4px12px;
+    font-size: 12px;
+    min-width: 60px;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-bad {
+    padding: 8px 12px;
+    font-size: 12px;
+    min-width: 60px;
+    border: none;
+    border-radius: 4px;
+}
 
 
 
